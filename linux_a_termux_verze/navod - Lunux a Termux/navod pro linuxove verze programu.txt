@@ -1,0 +1,98 @@
+
+jsou zde nove verze tohoto programu pro ubuntu (linux vseobecne) a pro Android termux
+ubuntu verze oznacena jako zip_verze_ubuntu_5 a zip_verze_4_pro_termux
+
+obe tyto nove verze pracuji na stejnem principu jako verze 7 pro PowerShell tzn. jiz nemaji v nazvu
+achvivu ulozene datum a cas ( malo odolne proti umyslnemu prejmenovani nejakym vtipalkem atd.)
+ale maji tento udaj ulozne uvnitr v archivu v podobe komentare v archivu
+tady musim zminit ze program zip pracuje se dvama tipy komentaru, jeden je tzv. main comment ( cmd parametr -z )
+ktery lze upravovat obr_1 a zobrazovat obr_2 take v programu WinRar
+druhy tip komentare je komentar souboru ( cmd parametr -c ) tento komentar je trvaly, nelze editovat, vymazat
+a vnem je v techto dvouch novych verzich ulozen datum a cas ktery je pak pridruzen k heslu archivu v souborech hesel
+na obr_3 je ukazka jak se da tento main comment zobrazit take v prostredi linuxu/termuxu
+nove pribyl script zmen_main-comment-zip.sh kterym se da menit pripadne vymazat tento komentar
+obr_4, obr_5, obr_6 ( vymazat ve smyslu ze dam nulovou delku textu obr_5 )
+na obr_6 vydite komentar souborovy na radku tesne nad kurzorem ktery je jak uz sem rikal trvaly bez znalosti hesla
+
+obr_7 ukazuje zadani nazvu uzivatelem, predchozich verzich byl tento nazev generovan automaticky
+podle aktualniho datumu a casu, zde si muzete zadat nazev libovolny, myslim ze to je mnohem lepsi
+pro pozdejsi orientaci ve vice archivech
+v nazvu mohou byt pouziti znaky a-z, A-Z vsechny cislice a znak minus neboli pomlcka a znak podrzitko misto mezerniku
+samozdrejme si uzivatel muze po vytvoreni soubor prejmenovat dle libosti vcetne mezer, diakritiky
+ale tady plati tato omezeni a nelze bez nich zarucit spravnou funkci
+totez plati i obracene pokud budu budu chtit programem desifrovat.sh archiv z heslem rozzipovat
+nazev upravim podle techto pravidel a pak ho teprve spustim skripem desifruj.sh obr_9
+
+dale musi byt splnena maximalni delka textu nazvu a ta mesmi prekrocit 64 znaku
+pri nesplneni techto podminek je uzivatel znovu vyzvan k opakovanemu zadani obr_8
+zrovna tak jako pri nedodrzeni povolenych znaku program neustale kontroluje nazev dokud neni zadan spravne
+a jinak nepusi dal
+
+program cti_list_zip.sh z parametrem nazvu souboru viz obr_10
+vypise na monitor file comment archivu 
+
+tyto nove verze pouzivaji misto programu rar program zip prvni duvod k komu je ten
+ze do archvivu musi byt castecne vydet (neslo udelat jinak) aby se znej dal precist komentar coz je stejne jak pro rar tak pro zip
+takze zadny rozdil
+druhy duvod je ten ze se mi nepodarilo v terminalu Androidim termux rar nainstalovat kdezto v Ubuntu je bezny
+takze by musela bej jedna rarova verze pro ubuntu a jedna zipova verze pro termux, coz se my nechtelo a prinos vlastne zadny
+takze jsem se po predchozi verzi rar_verze_4_ubuntu (je zde taky, zrovna tak jako zipova predchozi verze 3 termux)
+plne vratil zase k programu zip
+
+obe verze skripu myslim tim verze linux/termux jsou v podstate totozne, stim rozdilem ze termux verze
+ma jine androidi cesty do predem urcenych slozek hesel a archivu
+pak se take samozdrejme lisi prvnim radkem
+soubor generuj_hesla.sh a krom prvniho radku naprosto totozni jak pro verzi linux/termux
+a je take vzdy spolecny pro obe zde uvedene verze linuxove a termuxove
+pokud tak jako momentalne ja pouzivate linux bezici v prostedi windows 10, "vytahnete" si linky
+a vytvorte si odkazi na adresare ktere jsou pak zobrazovany v programu pruzkumnik ve windows obr 11 az 14
+
+no dal je asi vse jasne kdo pracoval nekdy z linuxem
+vsem skriptum pridat pravo spustitelnosti
+chmod +x nazev.sh ( pozn. cti change mod )
+nakopirovat (muzete pokud chcete i skripty zmen_main-comment-zip.sh a cti_list_zip.sh ) do cesty /usr/bin/
+sudo cp nazev.sh /usr/bin/
+u termuxu je to cesta /data/data/com.termux/files/usr/bin/ a bez toho uvodniho prikazu sudo
+to my zajisti ze skripty budou spustitelne odkudkoliv v ramci adresarove struktury obr_16 (promenna $PATH)
+soubory na sifrovani se daji pustit at uz jsem v jakemkoliv adresari coz ovsem
+neptali o desifruj.sh tam musim byt primo v adresari kde jsou soubory *.zip obr 9 a obr 15 (a vlastne i obr 14)
+pokud chcete pouzivat verzi pro termux tak doporucuju si nainstalovat stoho jejich app storu program
+Total Commander (je zdarma) v androidu je sice nejaky program Dokumenty nebo tak nejak se to jmenuje
+ale podle me nejni nad klasickej dvou sloupcovej file manager
+mimochdem daji se vnem take delat ruzne zalozky takze cesta vedouci treba pres 9 adresaru se bude v hlavni okne
+zobrazovat jako jeden odkaz, to si myslim ze je velky plus a vekla uspora casu (zatim nevideno jinde)
+jo soubory hesel nejsou kompaktibilni pro verzi linux/terux a verzi PowerShell jiz jsem v mynulosti vysvetloval proc
+linux a windows pouziva rozdilny znak pro ukonceni radku (pokud se nestalo od te doby neco co my uteklo)
+takze paklize by chtel mit nekdo na jednom pocitaci v provozu verze pro oba systemy bohuzel
+se to neobejde bez dvou oddelenych adresaru z hesly i kdyby mel obsah tech souboru bejt stejnej
+a nebo existuji ruzne convertory treba utilita dos2unix a unix2dos obr_17 (sudo apt-get dos2unix unix2dos)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
