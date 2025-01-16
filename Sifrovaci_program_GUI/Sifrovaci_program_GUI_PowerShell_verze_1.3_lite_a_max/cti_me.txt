@@ -1,0 +1,50 @@
+
+5.11.2024
+tento navod je spolecny pro obe verze 1.3 tedy jak "lite" tak "max"
+bude se snazit popisovat rozdily oproti verzi 1.2, ktera byla popsana nedavno
+takze v obouch verzich 1.3 se slo zase jeste dal nez ve verzi 1.2
+jeslize ve verzi 1.2 bylo v souboru klice k dispozici 256 sloupcu pro tvorbu
+nahodneho hesla tak ve verzi "lite" je to 1296 sloupcu a ve verzi "max" dokonce
+extemnich 3844 sloupcu, verze "lite" ma tedy 163296 a verze "max" 484344 zaplnenych
+poli, pro tento ucel jsem musel vymyslet novy zpusob ukladani pozice v matici
+do reference v listu souboru *.zip, v obouch techto verzich je stejne jako ve verzi
+1.2 a vlastne i ve verzich jeste nizsich pouzito pro zapis hesla 126 znaku dlouheho
+stale stejnych 252 znaku, takze abeceda se do verze 1.2 kde bylo 0-9 a A-F rozrostla
+ve verzi "lite" o zbytek velke abecedy tedy 0-9,A-Z a u verze "max" kni pribyla jeste
+i abeceda mala 0-9,a-z,A-Z (samozdejme se zde rozlisuje maly a velky znak )
+napr. dvojici "zz" je vyjadreno cislo 2205 a ZZ=3843 tedy vcetne nuly 3844 moznosti
+oproti tomu ve verzi "lite" je "ZZ" onech jez drive zminovanych 1295 (plus nula 1296)
+opet doporucuji se podivat na screenshoty v obouch adresarich "jpg/" uz jich neni tolik
+jako byvalo drive, dale je v adresarich doplnky u obouch verzi textovy soubor z vypisem
+vsech znaku a prislusnych hodnot snimy souvisejicich, soubor "Base_36.txt" v adresari
+"lite/doplnky" a soubor "Base_62.txt" ve stejnem adresari pro verzi "max"
+je zde i generator vcetne prilozeneho zdrojoveno souboru pro generovani techto
+textovich souboru z popisem.
+protahli se "ikony klicu" u obouch verzi, soubor klice pro verzi "lite"
+ma nyni priblizne 1:10 pomer vyska a delka ( u verze 1.2 to bylo cca 1:2)
+a u verze "max" je to pak dokonce 1:30, dale u verze "max" pribylo pocitadlo
+s v souboru "zasifruj.exe", "desifruj.exe" a "key_view.exe" pribylo nove mereni
+viz. prislusne screenhoty
+naopak ubyli a to u obouch verzi soubory "10_klicu" a "100_klicu" predpoklada se
+ze zde jiz nebudou potreba, samozdrejme kdyby nekdo chtel tak si je muze pridat z 
+nizssi verze ale je to v celku zbytecne, tady by se jiz melo vystacit z generovanim 
+jednotlivych klicu, soubor "generuj_dve_osoby.bat" byl naopak pro svoji uzitecnost 
+ponechan i zde
+nova pouzitelnost : u verze "lite" vychazi 50% "vytezene" plochy jednoho klice
+na 648 a u verze "max" na 1922, to by znamenalo pro "lite" po cely rok priblizne
+2 archivy (prilohy emailu, sdileni na ulozto.cz atp. cokoliv vas napadne) a pro 
+"max" 5 archivu verzi "max" uz povazuju za docela extremni, premejslel jsem jesli se
+mam do ni vubec poustet nebo ne, jesli by neztacilo jenom "lite" ale uz na svete
+a myslim ze majitele procesoru Core i7,i9 po ni mozna i radi sahnou, doba nacitani klice
+u verze "max" na mem pocitaci i5 2.7Ghz byla cca. minutova, takze nechavam na uvazeni 
+kazdeho, myslim ze ted uz je opravdu z ceho vybirat, jeste doplneni
+tady je zajimavy ze "lite" verze klice je zhruba 1/3 verze "max" a nacita se cca 7 vterin
+cili to by znamenalo 3x7 pro "max" ale neznamena a nevim proc a pride mi to divny
+co se tyka klicu, kazda verze ma svuj rozmer klice, co funguje je pouziti klice z verze
+"max" do verze "lite" (obracene ne), toto lze ale myslim si ze ktomu neni zadny prakticky
+duvod, zrovna tak ve verzi 1.2 by sel pouzit soubor klice v obou verzi 1.3 ale opet neni duvodu
+bylo by to akorat plitvani mistem
+nedavam uz u techto verzi archiv "old-1.x.zip" jako tomu bylo v minulosti
+zatim takto vsechno a budu zde pripadne zase informovat kdyz by se neco delo dal
+
+
