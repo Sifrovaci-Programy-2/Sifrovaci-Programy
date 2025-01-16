@@ -1,0 +1,17 @@
+
+plati uplne to same jako v predchozi verzi, stim rozdilem ze soubory klicu se nyni ukladaji
+v jinem formatu takze nelze pouzit klice z predchozi verze a musi se vygenerovat nove
+
+pozn. kdyby nekdo vedel jak na prvni radek file comment nacpat jeste vice znaku ( ted max. 252 )
+treba nejakym prevodem mezi ciselnymi soustavami, tak aby heslo mohlo byt jeste delsi, necht da vedet
+zip udajne podle nejakeho clanku ktery jsem nasel na internetu umoznuje pouzit heslo dlouhe az 2000 znaku
+( neoverena informace )
+
+verzi pto termux tentokrate jiz neprikladam, tam je jako minule potreba zmenit akorat prvni radek #!/usr/bin/bash
+a pak na zacatku radek z promennou cesta_soubory_klicu=""
+vse viz. minule verze
+
+
+
+
+

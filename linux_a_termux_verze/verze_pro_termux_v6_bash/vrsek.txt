@@ -1,0 +1,18 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# pozor v archivovanem adresari musi byt alespon 3 soubory a nebo 3 slozky a nebo 2 soubory a slozka apod.
+# proste 3 polozky jinak se nezapisou spravne vsechny radky file komentaru ( neni do ceho )
+# v pripade opaku je tedy NUTNE vytvorit ciste z tohoto duvodu napr. prikazem touch aaa/smazat1.txt aaa/smazat2.txt aaa/smazat3.># a prikazem "unzip -l aaa_v6.zip | head -n 11" potom jeste radeji zkontrolovat vsechny informace
+
+cesta_soubory_hesel="/data/data/com.termux/files/home/storage/external-1/zaloha/keys/"
+
+
+---
+
+
+#!/data/data/com.termux/files/usr/bin/bash
+
+cesta_soubory_hesel="/data/data/com.termux/files/home/storage/external-1/zaloha/keys/"
+
+
+

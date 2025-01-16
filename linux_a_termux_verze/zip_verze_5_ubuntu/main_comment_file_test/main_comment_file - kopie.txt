@@ -1,0 +1,4 @@
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2023-02-03 04:26   home/pi/c/Documents and Settings/DELL/Dokumenty/archivy_ubuntu/uvnitr_sifrovanej_zip/
+03_02_2023-88_99

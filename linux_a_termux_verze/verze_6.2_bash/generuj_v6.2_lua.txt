@@ -1,0 +1,3 @@
+
+soubor "generuj_v6.2.lua.sh" dela uplne to same jako soubor "generuj_v6.2_bash.sh" akorat ze to dela rychleji,
+napsano v lua 5.2.4

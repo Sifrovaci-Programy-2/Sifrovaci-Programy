@@ -1,0 +1,170 @@
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+234435544866533130162634443736421463642817331170484541253344267043513711536442164160643563691737406958521930647070582669583857125247385916151628586356273648555125321871594518451333714936536758551621421148532058542748315252353062674969605271412948594044
+delka zip_file_comment = 252 znaku
+heslo =
+mReyV1FSffJyib7xAPHRmWZ0L61P2EBa0XJkxi4VYUIUVeTidMDDsKtifBqIiFEdOuWeP2Say4fSAtkemwMhff2951bg3qx5ebl1mrj3U84EzteNrK22TYcRs17f7O
+delka hesla = 126 znaku
+nazev archivu zip je
+screenshots_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:02
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+161669143666553546104438611311493812376255406350373070115216505352102253465566616225403453173071632134633365462231463335142214502220672444635918233646564428716843612949695859286253564644673842373933581045562819312523603216566863644953663129383824146939
+delka zip_file_comment = 252 znaku
+heslo =
+s3KjP1J9wduLuCTyNUsNBLO3xY8WOsfhmYNYYkKGtsX6sxISPJNLLGy1CMaCdebzCwoSdmzqIU82qjxG6tcgnCqP8KolcsNxlUjGnR8g6QmhkIDzCs32A118DX3KlY
+delka hesla = 126 znaku
+nazev archivu zip je
+okita_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:04
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+pridavam lomitko na konec nazvu adresare
+kocky/
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+141819236426382458426735504328652328104466546966231217295768552914272369105518296444396318466952276814596144512832603365475635181543201618625465672527106433426960211835591359686354271657462465542330473823561833211645674057123947182569305740251245197139
+delka zip_file_comment = 252 znaku
+heslo =
+rYAsGQnxUCjnzgpoOaffjyaQa1qeJZ5y4Qpj9kWnyf1ITuNAKDUFZiuBmEacJ3Byfl6s2yC90boUOlUo1nM0fTqg7N191vqyCBTrUl8H4WeuTikeYIUFTp4MVNRLYY
+delka hesla = 126 znaku
+nazev archivu zip je
+kocky_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:05
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+396957285058163971353267615255231315506952384740533361343247342031373415705425141462361629375447106410251927543350381745335419301714224820656617675027104840382343405810286469211363285065164130263113113471296035526436401313131031485237561036275542681722
+delka zip_file_comment = 252 znaku
+heslo =
+KgPGdlkgFDNNuECLBwS22e494CEbC39l8yfzyNADK6kDLGtItARvsQpwMr4mUdgnaPgo4wiJ06oU29WM6yZycyrj5vzqCNjAGfkaCmDGJdQfe5sEEiEUcb9UeOT5mA
+delka hesla = 126 znaku
+nazev archivu zip je
+nejkrasnejsi_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:06
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+464342636947587164652962236135714753241257695340673644661035252849512422113329382628394934216331267050225420665770245241636450611149472718104612341055135339262626264440103742154132122631142132463629372160356344601940322213172647255670631740663160152270
+delka zip_file_comment = 252 znaku
+heslo =
+Z5gc9E9KglBz07iV4NCU6UA96HhrWFhvOX2u84Q6g31ZxL0GGhvy32BkfOTrAhqu7KGv2cXxnjVxGv2I7jGSZjiBjuItJb1s3Ta3O651Wbp3aes2VIDG6QLMRlq9hS
+delka hesla = 126 znaku
+nazev archivu zip je
+VK_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:07
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+426117655268634535613470115565425651534253455133683553332054515033233326206240487128483951364714432759705113446859685114506363275538643959113914133013412663643852126648362529515015416569615211285744361163242821502366541142116921334170122959441846243728
+delka zip_file_comment = 252 znaku
+heslo =
+hFaRE7dVIg41C58xqEpvV3TfMQFZgxTewnoZtMnL33Bl6WdMATp9W6SrHgHXOB67xoSjudcizIFMmkE7iLLO4APwvE62uumUTRVYmSqgo4wFHLW1OFFR6wh1nLb8b2
+delka hesla = 126 znaku
+nazev archivu zip je
+VK_LH_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:08
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+604112531530632033124465251918683616704045232021402222646667534165155516126766413051642751306545597051584314181213112322545268224353115443377066523233615230133328464028675230423719353546547063612721666336365227151561204262604754635923503966676044294649
+delka zip_file_comment = 252 znaku
+heslo =
+R6iNrSdBk1ut49yQQJrstakUEJ9E4hpXYF3SaUKABxIy6VM7uhE88wjZR2bkwzosV98T0NxbMm2AM2irPEalSl5LbxJcFPM28jl9J46aqZO1SM6fWjGNo3YI4w8jVE
+delka hesla = 126 znaku
+nazev archivu zip je
+Thai_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:08
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+494857424953602137202125546821425838252545196036355271554069292767681451701022145412161666114117521732645631326919652236576027476655472919172023463117126349584633422554143571296861234023476411435036535115145755625758185445377019236823343726384944241044
+delka zip_file_comment = 252 znaku
+heslo =
+a0PbJjxsHbK7etbxn1FdtIB45iiSmM8R6zkRyvsDam0Dfpnw9w2U41ojNiI8K0wh1WGGhU48E1lIfFObjIbN85dEkLfkdI3URsbK4fpBSvZ7p4Tn4DeJo7KBDr88EO
+delka hesla = 126 znaku
+nazev archivu zip je
+LH_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:09
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+454315663669604023163365707055361721435148234335475164514514706832475668364457133416155237176737711813684458364017377116151524376660493939256167221515465527681513712371282670215371675151292148552120296323171571612419141767496043395519231632307156154812
+delka zip_file_comment = 252 znaku
+heslo =
+o5LhPTxWrfotOzC1DsOKsaIRBeJFBPgptghD38GoZ92whxjiEp3aoZCUB5F1WnFw18TjRkdg8ASLwBsfTA6hcGojqltxXr1lehA2JlmcZ56HQVh7SvJX258LYFi9d7
+delka hesla = 126 znaku
+nazev archivu zip je
+LH_2_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:10
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+nacteny soubor hesel =
+/home/pi/bash/verze_6.2_bash/keys/moje_1
+nazev souboru hesel = moje_1
+pocet poly v souboru moje_1 = 126
+zip_file_comment =
+451555684721682925634140582531674719112516516750122855252455682032575766212110304046372124643420264217644668125714505121403739224761183631305251706561406543626241514864423540661141562035526438614554274328614055396170365920154566226131603671703422654624
+delka zip_file_comment = 252 znaku
+heslo =
+oSuLMGGLeMlKcThu4hZdHb13rrKPxNDltfPfT7orGHo9d0RqG66UX4XkhXHDICts8mik3lGE2cG4JwKOeaS2B5IQJdoHfx3I8XEIZHQISNHt0ucwRchQxYvRo7GiVV
+delka hesla = 126 znaku
+nazev archivu zip je
+Denisa_v6.2.zip
+datum vytvoreni tohoto archivu je 19.10.2024 16:11
+sha1sum souboru klicu je
+3c6ce4d886fc4f34156f1f0028157c45b215d495
+
+
+
