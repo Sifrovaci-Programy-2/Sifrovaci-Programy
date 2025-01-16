@@ -1,0 +1,9 @@
+[autorun]
+label=verze_All-In
+icon=cd.ico
+
+[Content]
+MusicFiles=false
+PictureFiles=false
+VideoFiles=false
+

@@ -1,0 +1,121 @@
+co nebude zmineno tak zustava stejne jako ve verzi 6d, 6d2
+
+nejvetsi novinka ve verzi 7 je ta ze datum k souboru hesla se jiz nauklada do nazvu archivu samotneho jak tomu bylo drive
+kde se mohlo stat ze vam to nejaky vtipalek prejmenovat a uz se do toho nikdy nikdo nedostal
+nove je datum vzniku souboru je ulozeno v komentari uvnitr souboru rar ktery je zamceni parametrem -k[zamek archivu]
+takze komentar po otevreni ve winRaru lze pouze cist ale nelze ho bez znalosti hesla znenit a tim stratit asociaci 
+na radek s heslem v souborech hesel
+ve verzi 7 byl nove pridan parametr -rr [ pridat do archivu zaznam pro opravu dat ] vice viz. napoveda ve WinRaru
+
+soubory hesel zustavaji uplne stejne jako u predchozich verzi
+uvazoval jsem sice o moznem zkraceni radku z casem a datumem ( kdyz uz neni soucasti nazvu *.rar)
+napriklad z 12_01_2023-04_47 na 120120230447 (uspora mista na disku + rychlejsi prohledavani )
+ale nakonec jsem se rozhodl to nechat kvuli zpetne kompaktibilite tak jak to je
+soubor z archivy je v config.cfg na prvnim radku nove nastaven na #\:archivy_v7
+
+verze 7 ma jeden nedostatek bylo nutno pri archivovani rarem vypustit parametr -hp[heslo nazvu slozek a souboru atd.]
+ktery je pritomen ve verzi 6, to ma bohuzel za nasledek to ze pokud se archiv otevre programem
+WinRar tak sice jede nic extrahovat bez znalosti hesla ale bohuzel je vyditelna vnitrni adresarova struktura
+tzn. nazvy adresaru,souboru,velikosti apod. bohuzel to byla nutnost z duvodu ze pokud se zasifruji tyto udaje
+nelze tak prikazem rar list precist komentar ve kterem je ulozen neprimi odkaz na heslo v podobe udaje o vzniku archivu
+viz obrazky jpg v tomto adresari
+jak jsem jiz rikal soubory hesel zustavaji uplne beze zmen doporucuji proto pouzivat v6 a v7 soucasne podle situace
+
+ve verzi 7 jiz neni slozka do ktere se kopiruji soubory pro archivaci tvorena automaticky dle aktualniho data a casu
+ale uzivatel je vyzvan aby zadal nazev teto slozky
+delka nazvu je omezena na max. 120 znaku ( lze menit )
+puvodne jsem uvazoval ze by zadani nazev prosel kontolou vstupu a nesmel by obsahovat bile znaky a specialni znaky
+ale zda se ze PowerShell si oproti linuxu dobre poradi skoro ze vsim bez problemu
+ceskou diakritiku vzlada bez problemu, vzlada mezery, jedine co zlobilo byl znak "\" v nazvu
+a urcite by se nasli i dalsi, z casovich duvodu netestovano
+kazdopadne bych doporucil se drzet trochu pri zemi a pouzivat pokud mozno alfanumeriku, vyhnout se
+ji zminenim lomitkum ruznym unicode znakum typu smajlik apod. mohlo by to delat zbytecne neplechu
+
+idealne dle meho znaky [0-9], [a-z], [A-Z], podtrzitko misto mezery a znak pomcka neboly minus
+a nebo zapakovat z nazvem papr. abc.rar a pak si to po dokonceni prejmenovat dle libosti
+a kdyby neco neslo rozpakovat a psalo by to nenalezena cesta do slozky a nebo nenalezen soubor
+tak zase prejmenovat na neco jednoducheho a pak znovu necha prechroustat programem
+
+dodatek:
+resenim proti cteni nazvu v archivu by mohlo byt vlozit do vytvorene slozky ne soubory a adrsare
+ale neco jiz zapakovaneho napr programem zip, ale pride me to uz docela zdlouhave
+
+dalsi vec ktera me napadla, je mit na jednom disku (flesce) obe verze tzn 6D2 a verzi 7
+v souborech z priponou ps je radek cislo 10 obsahujici odkaz na soubor config.cfg
+10 $config_file_name = "config.cfg"
+znenit ho treba na 
+10 $config_file_name = "config_v6.cfg"
+a korenovim adresari pak mit dva config soubory, jeden pro verzi 6 a druhej z jinym nazvem pro verzi 7
+a pouzivat podle otreby jednu nebo druhou
+obr 10 az 15
+
+do tohoto adresare jsem jeste pridal soubor stara_verze-7.zip, ve kterem je predchozi verze 7 ktera ale nefungovala
+pouzivala ke zjisteni datumu k heslu promennou LastWriteTime kterou precetla ze souboru je to neco jako
+cas posledni editace souboru, vsechno bylo v poradku do te chvile nez se soubor rar nenakopiroval
+do jineho pocitace pak doslo ke zmene tohoto udaje na aktualni datum a cas myslel jsem si ze tento 
+udaj je zapsany uvnitr souboru ale neni
+novy filesystem uvidel nove prichozi soubor a pridelil mu aktualni datum v okamziku nakopirovani
+takze fungovalo vcetne rar parametru -hp [ zasifruj adresarovou strukturu ] ale pouze na local pocitaci
+fungovalo to kdyz se soubor nahral v temze pocitaci do jineho adresare, kdyz se nakopiroval na flesku
+dokonce i kdyz se vypalil na cd-cko ale jakmile se z flesky nakopiroval do jineho pocitace a nebo uploadoval
+na nejake internetove uloziste tak byl konec, skoda tohle by se me byvalo libilo vic
+
+mozna by secteni hodnoty LastWriteTime dalo pouzit k synchronizaci adresaru, mit traba pracovni adresar
+a ardesar kam by se zalohoval a prepisoval by jen ty soubory u kterych by nasel novejsi datum editace
+neco jako rsync dobre znamy z unix systemu ,tak to je jenom takovej napad do budoucna
+
+este jsem pridal nejake moje pokusy v command line verzi raru, jsou zde popsany hlavne nejruznejsi
+parametry ktery co dela a tak
+
+23.4.2023
+nove jsem jeste pridal samospustitelne soubry tzn. pripna "exe" ktere by nemeli byt zavisle na
+instalaci PowerShellu v pocitaci a meli by pracovat vzdy samy o sobe, netastovano nebylo bohuzel na cem, mozna nejaky stary
+pocitac jeste z instalaci Windows PX apod. ale nebyl po ruce
+takze napr. soubor zasifrovat_v6.exe dela totez jako soubor zasifrovat_v6.ps1 ale nevyzaduje instalaci a povoleni
+PowerShellu v systemu Windows
+
+27.5.2023 pridano vytvoresi set/unset a zvuky
+
+
+12.8.2023
+prinadno zapinani a vypinani zvuku v programu pomoci radku 7 v souboru config_v6.cfg a config_v7.cfg
+radek 7 musi obsahovat "sound" pro zapnuti zvuku 
+nebo "nosound" pro vypnuti zvuku
+cokoliv jineho vypise chybove hlaseni a program ukonci
+stejne pro verzi 6 i verzi 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

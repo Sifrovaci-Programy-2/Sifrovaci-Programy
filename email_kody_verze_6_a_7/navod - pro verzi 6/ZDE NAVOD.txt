@@ -1,0 +1,162 @@
+
+1) k cemu slouzi tento disk:
+tento disk slozi k sifrovane komunukaci mezi dvema a nebo i vice uzivateli kteri chteji mit jistotu
+ze jejich komunikaci nemuze nikdo odposlouchavat
+muze poslouzit treba pro posilani priloh pro email svym znamym, pro zdileni souboru se soukromym obsahem 
+mezi uzivateli na ruznych portalech namatkou ulozto.cz, skladiste.cz apod.
+program je napsany a spustitelny v prostredi Microsoft PowerShell ktery je soucasti kazde instalace
+Windows, prostredi PowerShell je ale ve Windows standartne skryto a je potreba ho povolit, o tom pozdeji
+program je zalozeny na souborech hesel, ktere sa nachazeji v adresari "slozka_souboru_hesel"
+nazev teto slozky ale i dalsi nastaveni lze menit v souboru v config.cfg ktery se nachazi v korenovem adresari
+pro kazdy archiv je pouzito unikatni heslo ktere je dlouhe 120 az 127 znaku, prolomeni takovehoto hesla
+by na standartni pocitaci trvalo mnoho mesicu, na kazdou minutu v kalendarnim roce je pouzito nove unikatni heslo
+tento disk jiz soubory hesel obsahuje ale ty slouzi pouze na ukazku a je nutne si VYTVORIT VLASTNI
+
+2) instalace a nastaveni:
+je potreba prekopirovat obsah cd-cka do pocitace, pro uplnost uvadim kompletni postup
+disk vlozte do cd-rom mechniky ve vasem pocitaci a v programu pruzkumnik ve Windows ho otevrete
+mel by se vam naskytnout zhruba stejny pohled jako je na obrazku 1 kliknete na tlacitko "vybrat vse" obr.2
+(nebo rychleji pomoci klavesove zkratky control + a)
+dele zvolte tlacitko kopirovat obr.3, nekde v pocitaci si vytvorte novou slozku obr.4, prepnete se do ni
+a zvolete vlozit obr.5, pockejte az se soubory z cd disku prekopiruji do teto slozky
+otevrete slozku generovat hesla obr.6 v teto slozce spuste davkovy soubor generovat_hesla_vsechny_roky_2022-2030.bat
+melo by se obevit nove okno obr.8 a obr.9 ve kterem pobezi program generator hesel
+pockejte a program dobehne do konce obr.10 a zavrete ho stiskutim libovolne klavesy
+tim je proces generovani vlastnich hesel dokoncen
+
+3) nastaveni souboru config.cfg
+soubor config.cfg je mozne ponechat tak jak je bez jakychkoliv uprav na funkci programu to nebude mit zadny vliv 
+nebo je mozne vnem par veci upravit pro pohodlnejsi pouzivani, co by mohlo uzivatele asi nejvice zajimat
+je umisteni pracovni slozky ktery bude obsahovat zasifrovane archivy
+otevrete tento soubor pro editaci tim ze na nej kliknete pravym tlacitkem mysi a zvolte "upravit" obr.11
+umisteni pracovniho adresare z archivy je definovano radkem cislo 1 viz obr.12
+jak vydite je zde pouzito umisteni "C:\work" paklize chtete tento radek si upravte pro svoji potrebu
+zmente jej treba tak aby smeroval do slozky "Dokumenty" v prostredi Windows tolik pouzivane
+napiste napr. "C:\Users\DELL\Documents\archivy" ( "DELL" si zde samozdrejme zmente za sve uzivatelske jmeno )
+obr.13
+
+radek cislo 2 az radek cislo 5 odkazuje na ruzne altrenativy umisteni archivacniho programu WinRar v pocitaci
+a nebo na externi jednotce ( cd-rom, USB flash disk )
+obsah techto radku musi byl zachovan takovy jaky je, jde jen o jejich vzajemne poradi
+program postupuje tak je postupne nacita radky 2 az 5 a kde nalezne prvni shodu z umisteni instalace programu WinRar
+v pocitaci a nebo ve verzi portable WinRar na cd-disku nebo USB flash disku tu pouzije a o ostatni radky se uz nestara
+vydite zde napriklad radek cislo 2 stimto obsahem "#:\WinRAR-5.71_portable_version\App\WinRAR-x64\rar.exe"
+znamena to ze uzivatel bude jako prvni preforovat pouziti porable verze WinRaru ve 64bitove verzi a ze program
+bude bude provozovat s prenosneho media obr.14
+u prenosnych medii nelze predem zarucit oznaceni jednotky, pevny disk v pocitaci na napr. oznaceni pismenem "C:"
+cd mechanika myva oznaceni "D:" po pripojeni dalsi nove jednotky k pocitaci si system vybere prvni volne jeste
+neobsazene pismeno ktere ma k dispozici a to pouzije nelze proto do souboru config.cfg
+zapsat napr. umisteni "F:\WinRAR-5.71_portable_version\App\WinRAR-x64\rar.exe"
+nahradou za tato pismeno je tedy v souboru config.cfg pouzit znak "#" hash
+tento znak zarucuje ze program sam pozna odkud byl spusten a nahradi znak "#" za prislusne oznaceni jednotky
+znak "#" lze pouzit i na radku cislo 1 (umisteni slozky z archivy) kde je situace stejna
+
+nasleduji ruzne priklady obsahu souboru pro ruzne moznosti pouziti
+
+pro pouzivani programu z cd-rom disku (paklize je v pocitaci instalace programu WinRar a chci ji pouzivat)
+C:\Users\DELL\Documents\archivy
+C:\Program Files\WinRAR\rar.exe
+C:\Program Files (x86)\WinRAR\rar.exe
+#:\WinRAR-5.71_portable_version\App\WinRAR-x64\rar.exe
+#:\WinRAR-5.71_portable_version\App\WinRAR\rar.exe
+slozka_souboru_hesel
+
+pro pouziti programu z flash disku, slozka archivy na pevnem disku (v pocitaci instalace programu WinRar neni )
+C:\Users\DELL\Documents\archivy
+#:\WinRAR-5.71_portable_version\App\WinRAR-x64\rar.exe
+#:\WinRAR-5.71_portable_version\App\WinRAR\rar.exe
+C:\Program Files\WinRAR\rar.exe
+C:\Program Files (x86)\WinRAR\rar.exe
+slozka_souboru_hesel
+
+priklad cislo 3 (chci mit uplne vsechno u sebe na flash disku a to vcetne slozky archivu i programu WinRar)
+#:\archivy
+#:\WinRAR-5.71_portable_version\App\WinRAR\rar.exe
+#:\WinRAR-5.71_portable_version\App\WinRAR-x64\rar.exe
+C:\Program Files\WinRAR\rar.exe
+C:\Program Files (x86)\WinRAR\rar.exe
+slozka_souboru_hesel
+
+i kdyz si budete jisti ze instalaci WinRar na disku "C:" nebudete pouzivat a nebo ze v pocitaci vubec neni
+radek "C:\Program Files\WinRAR\rar.exe" a radek "C:\Program Files (x86)\WinRAR\rar.exe"
+nemazte jde totiz o to aby posledni radek cislo 6 zustal na svem miste
+radek 6 "slozka_souboru_hesel" odkazuje na umisteni do slozky souboru hesel ktery je pro chod programu nezbytny
+obsah radku 6 muzete upravit podle sve predstavy ale ucinte tak jeste pred spusteni generatoru hesel
+aby program vedel kde ma ukladat viz odstavec 2
+dulezita poznamka - nepouzivejte znak mezera a nepouzivejte diakritiku
+misto znaku mezera pouzijte znak "_" podtrzitko
+toto doporuceni se vtahuje i na radek cislo 1 umisteni slozky archivu
+autor nezarucuje ze program bude v opacnem pripade spravne fungovat
+tolik k popisu a pripadnemu nastaveni programu
+
+nyni se rozhodnete pro jednu z moznosti jak bude chtit program pouzivat
+paklize chcete program spoustet z cd-cka otevrete vypalovaci program napr. Nero Burning ROM
+o obsah slozky vypalte na disk ve dvou kopiich jednu pro sebe a jednu nekomu venujte
+nebo primo ve Windows v pruzkumnikovy oznacte vsechny soubory a adresare (klavesova zkratka control+a)
+a kliknete pravim tlacitkem mysi, dale zvolte odestal a vyberte jednotka cd-rom, dvd-rom apod.
+
+nebo cely obsah slozky prekopirujte do korenoveho adresare na flash disk
+pozn. pri pouziti z flash disku je vlastne krok s kopirovanim z cd-cka do pocitace zbytecny
+a soubory lze samozdrejme prekopirovat rovnou a vsechny upravy vcete generovani hesel provadet primo tam
+
+4) povoleni prostredi PowerShell ve Windows
+jak jsem ji naznacil v uvodu system Windows odsahuje prostredi Microsoft PowerShell ale je beznemu uzivateli
+skryto a je potreba ho povolit vice viz obr.15 (stazeny odnekud z internetu)
+v pocitaci ve vyhledavani zadejte slovo "power" (obr.16) z vysledku vyberte Windows PowerShell ISE a dale
+zvolte spustit jako spravce na dotaz systemu o potvrzeni spusteni odpovezte kliknutim na tlacitko ano
+do otevreneho okna nahoru napiste radek jako je na obrazku 17 zmacknete klavesu F5 a nebo kliknete na
+ikonu zelene sipky uprostred nahore, obevy se dialogove okno a zde zvolte "Yes to all" obr.18
+okno zavrete ( pokud by toto nefungovalo, hledejte na internetu "jak povolit powershell ve windows")
+
+5) pouzivani programu
+program zasifrovat.ps1 a desifrovat.ps1 obr.19 by mel byt spousten v prostredi Windows PowerShell
+a nikoliv v editoru Windows PowerShell ISE
+spustene okno ma ve Windows defautne nastavene zelene pozadi a byli text coz je spatne citelne a pusoby to 
+celkem odpudivim dojmem obr.20
+
+kliknete pravim tlacitkem mysi na zahlavi okna dale vyberte vlastnosti, objevi se nova karta
+zde vyberte nahore polozku "barvy" nastavte Pozadi zobrazeni na cerna barva a Text zobrazeni na bila obr.22
+dale je jeste mozne na zalozce "pismo" zvolit font a velikost zobrazevaneho textu
+potvrdte tlacitkem "OK"
+
+6) nekolik poznamek na zaver
+jak jsem ji rekl program poustejte v Windows PowerShell a ne v editoru Windows PowerShell ISE
+vytvorte si ve svem systemu Windows asociaci aby se soubory z priponou "ps1" takto pousteli
+obr.23,24
+program neni urcen na pouzivani z pevneho disku tedy "C:\"
+paklize program pozivate z na flash disku mejte jeste nekde jinde ulozenou kopii adresare z hesly
+jako zalohu, pri nechtenem vymazani soboru se uz ke svym datum nedostanete
+pokud budete posilat vice souboru najednou pockejte vzdy alespon jednu minutu aby se zmenil casovy udaj v nazvu souboru
+
+vytvoreny a nebo prijaty soubor z priponou "rar" ma tvar napr. 10_11_2022-12_54.rar 
+coz znamena den_mesic_rok-hodina_minuta.rar tento nazev muzete zmenit a pridat si knemu nejaky
+svuj komentar ale tak abyste zachovali tento udaj program podle nej hleda jake heslo ma pouzit
+paklize tento udaj zanikne ke svym datum se uz nedostanete
+muzete prejmenovat napr. na 10_11_2022-12_54-zde_nejaky_muj_popis_obsahu_tohoto_souboru_abych_se_vtom_pozdeji_vyznal.rar
+prefix DD_MM_YYYY-HH_MM nemazte, cely program je predevsim zameren na bezpecnost
+soubor napr. 10_11_2022-12_54.rar nazdilejte na jiz v uvodu zminovanem portalu a adresatovy poslete odkaz na nej
+nebo poslete soubor jako prilohu emailu atd.
+jde o to poskytnout pripadnemu utocnikovy co nejmene informaci ze kterych by mohl cokoliv vycist
+
+obr. 25,26 ukazky behu programu zasifrovat.ps1 a desifrovat.ps1
+tento disk obsahuje take verzi tohoto programu pro Linux a verzi pro Android (program Termux ke stazeni na android app store)
+program generator hesel funguje bohuzel pouze do roku 2037, vznikla take verze generatoru hesel pro PowerShell
+najde te ji v adresari generovat_hesla\PowerShell_generovat_hesla\ tuto verzi ale nemuzu doporucit stoho
+duvodu ze generovani hesel vni trva velice dlouho ale kdyz uz byla na svete tak jsem ji prilozil take obr.27-29
+obr.30 ukazka verze programu ktery bezi v instalaci Ubuntu pod Windows 10 (oficialne povoleno Microsoftem)
+
+autor vas zada aby jste tento program vzdy kopirovali v puvodni podobe vcetne vsech jeho casti, tohoto navodu a obrazku
+slozka souboru hesel samozdrejme zabira nejvice mista tak alespon vytvorit prazdnou slozku odpovidajiciho nazvu
+
+program byl napsan v Powershell verze 5.1.19041.1682
+v prostredi Windows 10 Pro
+
+12.8.2023
+prinadno zapinani a vypinani zvuku v programu pomoci radku 7 v souboru config_v6.cfg a config_v7.cfg
+radek 7 musi obsahovat "sound" pro zapnuti zvuku 
+nebo "nosound" pro vypnuti zvuku
+cokoliv jineho vypise chybove hlaseni a program ukonci
+stejne pro verzi 6 i verzi 7
+
+
+
