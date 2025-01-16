@@ -1,0 +1,62 @@
+
+program se neinstaluje, takze celej adresar s programem prekopirujte nekam do pocitace napr.
+do C:\Users\UserName\Documents\
+na soubory co maj pripomu "exe" nedelejte zadne zastupce odeslat na plochu tak jak se to nekdy delava
+ale muzete si udelat pro rychle otevreni zastupce na celou slozku co jste nakopirovali
+samozdrejme si slozku prejmenujte jak chcete, tak aby ste se vtom samy potom vyznali
+nazev teto slozky muze obsahovat i ceske znaky z diakritikou, uvnitr teto slozky se to naopak
+nedoporucuje, neni to dano nechopnosti autora ale spise to ma historicke souvislosti o kterej se nebudu rozepisovat
+
+zacnete tim ze v adresari spustite soubor 10_klicu.bat, po dobehnuti generatoru klicu se podivejte do adresare
+"keys" (tento adresar zalohujte a nikdy ho neprejmenovavejte, popsano podrobneji jinde)
+tak v tomto adresari najdete nove polozky klic-01 az klic-10, tyto si prejmenujte podle 
+sebe napr. osoba1-jmeno_pro_osoba2-jmeno a tak podobne, klice ktere nebudete potrebovat muzete smazat
+jdete o uroven vis v adresarovem stomu a vytvorte zde nejakou novou slozku, takze kliknout na vytvorit nova slozka
+pokud pouzivate ceskou lokalizaci Windows tak jako ja, tak ze obevi nazev i z diakritikou ze kterou si program nerozumy
+slozku prejmenujte, znak mezera nahrazujte znakem podrtzitko, dovnit nakopirujte cokoliv chcete z jakymkoliv nazvem
+spuste program zasifruj.exe a nechte se vect jeho jeho dialogem
+po skonceni programu by se mel ve obevit novy soubor z nazvem slozky a priponou "zip"
+opacny postup je podobny, nakopirujte do slozky soubor "zip" ziskany odjinud, spuste program desifruj.exe
+podivete se do slozky "jpg" kde jsou ruzne screenshoty z pouzivani programu
+21.6.2024
+
+doplneni z 23.6.2024
+jelikoz program nevyzaduje zadnou instalaci je tak zvane "portable" je nejlepsi ho pouzivat na flash disku,
+paklize mate program na cd-cku tak prekopiruje celou slozku na flash disk ( prejmenujte ji jak chcete ),
+paklize mate z GitHub rozipujte cely adresar Sifrovaci_program_GUI_PowerShell_verze_1.1-master.zip na flashdisk
+pouzivani z flash disku ma nekolik vyhod, svoje data nosite u sebe a paklize se program zrovna nepouziva neni
+flashdisk pripojen k pocitaci a je tak chranem pred okolnimi vlivy jako jsou napr. ruzne viry z internetu apod.
+flashdisky muzete mim treba dva a obsahy adresare keys mezi nimi vzajemne kopirovat
+pozn. v adresari z obrazky "jpg" jeste pribyl novy adresar navod "Zmena_pismena_jednotky_FlashDisku"
+
+31.7.2024 
+opravena chyba, spatne cislovani souboru klicu z nabidce vyberu klice
+vice v adresari jpg\Sort - nabidka vyberu klice ( oprava z 31.7.2024 )
+
+13.10.2024
+pridano testovani 10ti hesel vytvorenych jednim klicem "autoruv-klic-cislo-1"
+vse v adresari \doplnky\testovani_hesla\
+
+20.10.2024
+1) pridana nova funkce do souboru "generuj_klic.ps1", program hlida jestli v miste odkud byl spusten existuje
+adresar "keys", paklize neni tak ho vytvori, vypise o tom hlaseni, takze dva nove souboru "generuj_klic.ps1" a" generuj_klic.com"
+2) dale pridana oprava testovani hesel je novy adresar \doplnky\testovani_hesla\OPRAVA-test_2-30_hesel_postupne\
+vice informaci uvnitr
+3) v ceste \PS2EXE\Module\ pribyl novy soubor "compile.bat" ktery ma usnadnovat praci z utilitou PS2EXE, vse by se pak
+melo odehravat snadneji pomoci clipboardu, urychluje to praci
+4) pridano par radek do souboru "10_klicu.ps1" a "100_klicu.ps1", nove ted vypisuje zlute hlaseni
+tzn. 4 nove soubory "10_klicu.ps1", "100_klicu.com", "100_klicu.ps1", "100_klicu.com"
+
+23.10.2024
+novy adresar \doplnky\keys_view\ a vnem pribyla utilitka ktera slouzi na prohlizeni obsahu klicu
+na radku cislo 5 je nastaveni promenne cesty do adresare "keys" takze zde, upravit podle svoji
+situace, program se pak zepta na nazev klice, ktery je potreba rucne naklepat a odentrovat (lze si pomoci schrankou)
+nicim navic jsem se nezdrzoval ( nejaky menu vyberu souboru apod.) mozna casem, program udela to ze v 
+adresari ze ktereho byl spusten vytvori novy textovi soubor s popisem obsahu zvoleneho klice
+
+26.10.2024
+udelano par drobnych uprav v souborech zasifruj.ps1 a desifruj.ps1, vse popsano v adresari \jpg\26102024\*
+nove soubory: zasifruj.*, desifruj.*, stare soubory pred upravou pridany do archivu archivu old-1.1.zip
+takze novy i soubor old-1.1.zip, aktualizovany prislusny soubor v adresari sha1sum\
+
+
