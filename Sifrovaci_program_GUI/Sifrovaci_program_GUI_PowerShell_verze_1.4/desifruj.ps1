@@ -63,13 +63,16 @@ Write-host -ForegroundColor yellow $pole_tipy[$tip_rnd]
 #Remove-Variable d_all_file_zip_2,all_file_zip_2,sel_folder,nazev_adresare,all_folder_pouzitelne,d_all_folder_pouzitelne,all_folder,d_all_folder -ErrorAction SilentlyContinue
 #Remove-Variable vybrany_zip, cmd_unzip, cmd_output, d_cmd_output, radek_list, nalezeno -ErrorAction SilentlyContinue
 
-[string] $path = $pwd; $path += "\" # tady pozor $path ma tip System.Object, viz. $pwd.GetType()
+# opraveno 17.1.2025
+[string] $path = $pwd
+if ( $path.Length -ne 3 ){ # pokud je v root adresari nepridavej lomitko bylo by pak napr. "R:\\" misto "R:\"
+# jinak udela treba "R:\neco\" misto "R:\neco" coz je v poradku
+$path += "\" # tady pozor $path ma tip System.Object, viz. $pwd.GetType(), cili dat pred to [string] jako deklaraci typu
+}
+# konec opraveno 17.1.2025
 
-#[string] $path = "c:\work\"
 
-#echo $path
 $nazev_adresare_klice = "./keys"
-
 # kontrola existuje li folder keys
 $nazev_adresare_klice_exist = Test-Path $nazev_adresare_klice
 if ($nazev_adresare_klice_exist -clike "False"){
@@ -83,7 +86,9 @@ exit
 
 # hleda vsechny soubor *.zip a cete $path
 $all_file_zip = @()
+#echo $path"<"
 $all_file_zip += @(Get-ChildItem $path -Include '*.zip' -Name)
+#                                  ^ tady mu puvodne dve lomitka pred opavou 17.1.2025 napr. "R:\\" kupodivu nevadily
 $d_all_file_zip = $all_file_zip.Length #int32
 #echo $d_all_file_zip"<"
 

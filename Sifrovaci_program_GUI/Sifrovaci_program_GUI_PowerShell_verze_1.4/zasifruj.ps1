@@ -61,14 +61,17 @@ Write-host -ForegroundColor yellow $pole_tipy[$tip_rnd]
 #Remove-Variable klice_2,delka_nazvu_jednoho_klice,d_klice_2, all_folder_2,delka_nazvu_jednoho_adresare,d_all_folder_2 -ErrorAction SilentlyContinue
 #Remove-Variable matrix, nazev_klice, nazev_adresare_klice, klice, sel_file_key -ErrorAction SilentlyContinue
 
-[string] $path = $pwd; $path += "\" # tady pozor $path ma tip System.Object, viz. $pwd.GetType()
+# opraveno 17.1.2025
+[string] $path = $pwd
+if ( $path.Length -ne 3 ){ # pokud je v root adresari nepridavej lomitko bylo by pak napr. "R:\\" misto "R:\"
+# jinak udela treba "R:\neco\" misto "R:\neco" coz je v poradku
+$path += "\" # tady pozor $path ma tip System.Object, viz. $pwd.GetType(), cili dat pred to [string] jako deklaraci typu
+}
+# konec opraveno 17.1.2025
 
-#[string] $path = "c:\work\"
-
-#echo $path
 
 $nazev_adresare_klice = "./keys"
-#$nazev_adresare_klice = "./keys_test"
+# kontrola existuje li folder keys
 $nazev_adresare_klice_exist = Test-Path $nazev_adresare_klice
 if ($nazev_adresare_klice_exist -clike "False"){
 Write-host -ForegroundColor red "neni adresar $nazev_adresare_klice"
@@ -83,7 +86,9 @@ exit
 #$all_folder = @(Get-ChildItem -Attributes Directory $pwd -Exclude "keys")
 #$all_folder= @(Get-ChildItem -Attributes Directory $path -Exclude "keys" -Name)
 $all_folder = @()
+#echo $path"<"
 $all_folder += @(Get-ChildItem -Attributes Directory $path -Exclude "keys" -Name) | Sort-Object
+#                                                     ^ tady mu puvodne dve lomitka pred opavou 17.1.2025 napr. "R:\\" kupodivu nevadily
 #$all_folder += @(Get-ChildItem $pwd -Include '/*' -Name)
 #echo $all_folder # typ pole
 $d_all_folder = $all_folder.Length #int32
