@@ -12,7 +12,7 @@ jak to funguje se nyni pokusim vysvetlit na tomto (pro snazsi pochopeni) velmi z
 matice ve verzi 1.3 max mela 3844x126 tedy 484344 policek, kazdy soubor klice ma tedy v teto verzi 484344 radku
 a na kazdem radku jednu hodnotu, tyto hodnoty se nacitaji pomoci tzv. streameru, pousupne radek po radku
 nacteni vsech 484344 radku trva streameru jen nekolik malo vterin
-----
+----https://sdilej.cz/free/index.php?id=30539547
 pro jednoduchost si predstavme misto tohoto monstra tutu matici pouze 5x5 polozek
 
 virtualni matice 5x5 policek
@@ -57,7 +57,7 @@ prvni nahodne vygenerovane cilso bude napr. rnd=2
 
 otevre se ve steameru nacitani souboru klice
 nactou se prvni 2 radky, hodnota prvniho radku ze zahodi a hodnota druheho radku ze preulozi do promene rekneme napr. "X"
-takze ted plati ze X[1]=02 (X - hodnota typu pole tzn. indexovana promenna)
+takze ted plati ze X[1]=02 (X - hodnota typu pole tzn. indexovana promenna)https://sdilej.cz/free/index.php?id=30539547
 dale, na vodorovnim radku v matici 5x5 nahore je vzdy vodorovne 5 policek
 takze se spocita 5-(rnd=2)=3
 streamer nacte tedy dalsi 3 radky ale tyto radky se opet vypusti zahodi ( tzn. nepreulozi do jine promenne)
@@ -119,6 +119,7 @@ obsahu adresare keys\*.* adresare sha1sum\*.txt a archivu *.zip do teto verze na
 ve verzi 1.4 zmizela z pochopitelnych duvodu ikona klice, dale zmizel easter-egg, a pocitadlo casu nacitani klice
 program generuj_klic.exe zustal bez uprav a doplnek v adresari doplnky\keys_view\keys_view.exe take zustal puvodni,bez uprav,
 zde se pracuje z celim obsahem souboru klice, takze zadne vylepseni zde neni mozne
+nyní doporučuji používat už jenom tuto verzi 1.4
 
 15.1.2025 autor
 
